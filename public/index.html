@@ -41,16 +41,16 @@
 						<!--</select>-->
 					</p>
 					<p class="pull-right" v-bind:class="{ 'text-success': Game.CurrentPlayer === Game.Players.Nought }">
-						<!--<select name="Difficulty" id="Difficulty" v-model="Game.Difficulty" title="Owner">-->
-							<!--<option value="3">Normal</option>-->
-							<!--<option value="4">Hard</option>-->
-							<!--<option value="5">Expert</option>-->
-						<!--</select>-->
-						<!--<select name="NoughtOwner" id="NoughtOwner" v-model="Game.Players.Nought.Owner" title="Owner">-->
-							<!--<option value="AI">AI</option>-->
-							<!--<option value="User">User</option>-->
-						<!--</select>-->
-						<!-- - -->
+						<select name="Difficulty" id="Difficulty" v-model="Game.Difficulty" title="Owner">
+							<option value="3">Normal</option>
+							<option value="4">Hard</option>
+							<option value="5">Expert</option>
+						</select>
+						<select name="NoughtOwner" id="NoughtOwner" v-model="Game.Players.Nought.Owner" title="Owner">
+							<option value="AI">AI</option>
+							<option value="User">User</option>
+						</select>
+						 -
 						<span v-html="Game.Players.Nought.Sign"></span>
 						-
 						<strong>{{ Game.Players.Nought.Name }}</strong>
