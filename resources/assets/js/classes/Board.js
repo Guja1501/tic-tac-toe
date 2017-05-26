@@ -92,22 +92,22 @@ class Board {
 		else if (this.Boxes[combination[0]].Player === player2) score = -1;
 
 		// two in a row
-		if (this.Boxes[combination[1]] === player1) {
+		if (this.Boxes[combination[1]].Player === player1) {
 			if (score === 1) score = 10; // two in a row for player1
 			else if (score === -1) return 0;
 			else score = 1;
-		} else if (this.Boxes[combination[1]] === player2) {
+		} else if (this.Boxes[combination[1]].Player === player2) {
 			if (score === -1) score = -10; // two in a row for player2
 			else if (score === 1) return 0;
 			else score = -1;
 		}
 
 		// Three in a row
-		if (this.Boxes[combination[2] - 1] === player1) {
+		if (this.Boxes[combination[2]].Player === player1) {
 			if (score > 0) score *= 10; // three in a row for player1
 			else if (score < 0) return 0;
 			else score = 1;
-		} else if (this.Boxes[combination[1] - 1] === player2) {
+		} else if (this.Boxes[combination[1]].Player === player2) {
 			if (score < 0) score *= 10; // three in a row for player2
 			else if (score > 1) return 0;
 			else score = -1;
