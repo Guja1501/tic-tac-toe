@@ -4,13 +4,14 @@
   "description": "AI - MiniMax Algorithm",
   "private": true,
   "dependencies": {
-    "cross-env": "^5.0.0",
-    "laravel-mix": "^0.12.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "vue": "^2.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.0.0",
+    "laravel-mix": "^0.12.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run development",
